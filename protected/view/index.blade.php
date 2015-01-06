@@ -1,0 +1,1 @@
+hello {{\Date\jDate::forge()}}

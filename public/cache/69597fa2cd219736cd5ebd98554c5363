@@ -1,0 +1,22 @@
+<?php echo Form::Start(array('router'=>'form', 'method' => 'get', 'file' => true), array('class'=>'formWrapper', 'id'=>'forms')); ?><br>
+<?php echo Form::Input(array('name' => 'username','value'=>'Username'),array('class'=>'1')); ?><br>
+<?php echo Form::Radio(array('name' => 'gender','value'=>'Male'),array('class'=>'1')); ?> male
+<?php echo Form::Radio(array('name' => 'gender','value'=>'Female'),array('class'=>'1')); ?> female <br>
+<?php echo Form::Checkbox(); ?>
+
+<?php echo Form::Password(array('name' => 'password','value'=>'Password')); ?><br>
+<?php echo Form::Hidden(array('name'=>'asdasdasd','value'=>'sdasdasdas')); ?><br>
+<?php echo Form::Teaxtarea(array('value'=>'print your name', 'name'=>'address'), array('style'=>'color: red;')); ?><br>
+<?php echo Form::File(array('name'=>'img')); ?> <br>
+<?php echo Form::Submit(array('value'=>'send kon'), array("onclick"=>"alert('Hello World!')")); ?> </br>
+<?php echo Form::Select('age', [18,14,25,14,12,25,148]); ?> </br>
+<?php echo Form::Select('age',  array(
+                        'Happy' => array('asdasdas'=>'pedram', '5454', 'Ecstatic'),
+                        'Sad' => array('Bereaved', 'Pensive', 'Down'),)); ?> </br>
+
+
+<?php echo Form::End(); ?>
+
+
+
+

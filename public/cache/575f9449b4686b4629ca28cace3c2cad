@@ -1,0 +1,10 @@
+Hello World
+<h3> Glob </h3>
+<hr/>
+<pre>
+<?php foreach($glob as $gb): ?>
+<a href='<?php echo $gb; ?>'> <?php echo File::Name($gb); ?> </a>
+<?php endforeach; ?>
+
+
+</pre>
